@@ -56,6 +56,18 @@
         .animate-fade-in-delay {
           animation: fadeIn 1.2s ease-out 0.3s forwards;
         }
+
+        <style>
+@keyframes logoEntry {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
       </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -99,7 +111,7 @@
   });
 </script> 
 
-      <!-- HERO con logo de fondo -->
+      <!-- HERO con logo  -->
 
       <section
   id="inicio"
@@ -115,12 +127,13 @@
     <div class="absolute inset-0 bg-black/0.2"></div>
     <div class="relative z-10 text-white text-center animate-fade-in">
       <!-- Contenido opcional -->
-    <img
-      src="images/logotipo blanco sobre fondo negro.png"
-      alt="BLÖMS logo"
-      class="w-64 sm: w-80 mx-auto rounded-xl shadow-lg transition-all duration-1000 ease-in-out hover:brightness-110"
-      class="w-64 sm:w-80 mx-auto drop-shadow-[0_0_20px_rgba(106,13,173,0.4)] animate-logo-fade"
-    />
+
+      <img
+  src="images/logotipo blanco sobre fondo negro.png"
+  alt="BLÖMS logo"
+  class="w-64 sm:w-80 mx-auto rounded-xl drop-shadow-[0_0_20px_rgba(106,13,173,0.35)] animate-logo-entry"
+/>
+    
   </div>
 
   <div class="relative z-10 text-white text-center animate-fade-in">
